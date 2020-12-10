@@ -60,8 +60,9 @@ struct CoinManager {
             let currenEx = decodedData.asset_id_quote
             let rate = decodedData.rate
             
-            let coin = CoinModel(currecy: curren, currencyExchange: currenEx, rate: rate)
+            let coin = CoinModel(currecy: curren, currencyExchange: currenEx, rate: rate )
             print(decodedData.rate)
+            print(coin.rateToString)
             
             return coin
         }catch{
